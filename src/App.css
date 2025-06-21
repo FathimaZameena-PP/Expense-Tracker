@@ -1,38 +1,123 @@
-.App {
+#main-heading{
   text-align: center;
+  color: #008000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  margin: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head{
+  margin-right: 10vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#totalbalanceheading{
+  font-weight: 530; 
+}
+
+.cashflow {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #ccc;         /* Light gray border */
+  padding-top: 1.5vh; 
+  padding-bottom: 1.5vh; 
+  padding-left: 6vw; 
+  padding-right: 6vw;                /* Space inside the box */
+  margin-block: 20px;             /* Space above and below */
+  background-color: #f9f9f9;      /* Light background color */
+  border-radius: 8px;             /* Rounded corners */
+
+}
+
+#transactionSection{
+  border: 2px solid #ccc;         /* Light gray border */
+  padding-top: 4.5vh; 
+  padding-bottom: 4.5vh; 
+  padding-left: 6vw; 
+  padding-right: 6vw;                /* Space inside the box */
+  margin-block: 20px;             /* Space above and below */
+  background-color: #f9f9f9;      /* Light background color */
+  border-radius: 8px; 
+}
+
+#labels{
+  display: flex;
+  justify-content: space-around;
+}
+
+#amountandDescr {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 16px; /* space between elements */
+  flex-wrap: wrap; /* optional: allows wrap on small screens */
+  margin-top: 10px;
+}
+
+#amt,
+#desc {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add,#delete{
+  background-color: green;
   color: white;
+  border: 1px solid green;
+  box-shadow: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+#add:active ,#delete:active{
+  transform: scale(0.96);  /* Slight shrink to show press */
+  background-color: darkgreen;  /* Optional: darker shade on click */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#add:hover, #delete:hover {
+  background-color: #00aa00;
+  cursor: pointer;
+}
+
+
+#addDiv{
+  display: flex;
+  justify-content: center;
+}
+
+#transactionList{
+  padding: 0%;
+}
+
+#list{
+  padding: 0%;
+}
+
+#item{
+  border: 1px solid #ccc;       
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+  padding-right: 2vw;   
+  padding-left: 2vw;             /* Space inside the box */
+  margin-block: 5px;             /* Space above and below */
+  background-color: #fdfdfd;      /* Light background color */
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#item span {
+  flex: 1; /* distribute equal width */
+  text-align: left;
+}
+
+#item span:last-child {
+  text-align: right;
+}
+
+#delete{
+  height: 21px;
+  width: 60px;
 }
