@@ -1,6 +1,6 @@
 # Expense Tracker
 
-A simple React application to track daily income and expenses. Users can add, view, and delete transactions, and see an updated balance in real-time.
+A React application to track daily income and expenses. Users can add, view, and delete transactions, and see an updated balance in real-time.
 
 ## Features
 
